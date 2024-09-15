@@ -54,8 +54,8 @@ const HistoryPage = () => {
 
   return (
     <div style = {backgroundImageStyle}>
-    <div className=" text-white p-8">
-      <h1 className="text-3xl mb-6 text-center">User Excuse History</h1>
+    <div className=" text-white p-8 text-shadow">
+      <h1 className="text-5xl font-bold mt-10 mb-10 text-shadow text-center">user excuse history</h1>
 
       {history.length === 0 ? (
         <p className="text-center">No history found for this user.</p>
@@ -63,7 +63,7 @@ const HistoryPage = () => {
         <div className="overflow-x-auto">
           <table className="table-auto w-full text-left bg-gray-800 rounded-lg">
             <thead>
-              <tr className="bg-purple-700">
+              <tr className="bg-blue">
                 <th className="px-4 py-2">Task</th>
                 <th className="px-4 py-2">Excuse</th>
                 <th className="px-4 py-2">Urgency</th>

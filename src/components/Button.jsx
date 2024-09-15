@@ -3,7 +3,7 @@ function GetStartedButton( {link = "#", text = "Get Started" }) {
     <div className="flex justify-center">
       <a
         href={link}
-        className="bg-blue hover:bg-neonBlue text-white font-bold py-4 px-8 rounded-full transition duration-300 ease-in-out"
+        className="bg-cobaltBlue hover:bg-neonBlue text-white font-bold py-4 px-8 rounded-full transition duration-300 ease-in-out"
       >
         {text}
       </a>

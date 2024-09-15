@@ -6,7 +6,7 @@ import React from 'react';
 export default function Excuse() {
   return (
     <div style = {backgroundImageStyle} className="cuteBackground min-h-screen flex flex-col items-center justify-center text-white px-4 relative">
-      <h1 className="text-6xl font-bold mt-2 mb-10 text-shadow">excuse engine</h1>
+      <h1 className="text-6xl font-bold mt-20 mb-10 text-shadow">excuse engine</h1>
       <Form /> {/* Reuse the styled Form component */}
     </div>
     

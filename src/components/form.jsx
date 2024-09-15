@@ -86,7 +86,7 @@ const Form = () => {
   return (
     <div >
       <form 
-        className="bg-gray-800 p-10 px-80 rounded-lg shadow-lg space-y-4"
+        className="bg-gray-800 p-10 rounded-lg shadow-lg space-y-4 border-2 border-gray-600 "
         onSubmit={submit}
       >
         <div className="flex flex-col">
@@ -102,17 +102,10 @@ const Form = () => {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="type" className="mb-2 font-bold">Type:</label>
-          {/* <input
-            type="text"
-            id="mood"
-            placeholder="Enter your mood here..."
-            value={type}
-            onChange={(e) => setMood(e.target.value)}
-            className="p-2 rounded bg-gray-700 focus:ring-2 focus:ring-indigo-500 outline-none"
-          /> */}
+          <label htmlFor="type" className="mb-2 font-bold">Type of Excuse:</label>
           <select
           id="type"
+          placeholder="Enter the type of excuse you'd like..."
           value={type} // Correct the value prop
           onChange={(e) => setType(e.target.value)} // Correct the state setter
           className="p-2 rounded bg-gray-700 focus:ring-2 focus:ring-indigo-500 outline-none"
@@ -126,7 +119,7 @@ const Form = () => {
 
         <button
           type="submit"
-          className="w-full py-2 px-4 bg-indigo-600 rounded-lg font-bold text-white hover:bg-indigo-500 transition-all"
+          className="w-full py-2 px-4 bg-blue rounded-lg font-bold text-white hover:bg-neonBlue transition-all"
         >
           Submit
         </button>
@@ -142,11 +135,14 @@ const Form = () => {
       {/* Display Results after API call */}
       {results && (
         <div>
-        <div className="mt-8 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg">
+        <div className="mt-8 bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-lg border-2 border-gray-600 ">
           {/* <h3 className="text-xl font-bold mb-4">Returned Data:</h3> */}
           <p className="text-lg">{results.response}</p>
         </div>
-        <p className="mt-10 text-3xl text-center">{results.urgency}</p>
+        <p className="text-4xl font-bold mt-4 mb-5 text-shadow text-center">
+          urgency of task: <span className="text-decoration-underline underline">{results.urgency}</span>
+        </p>
+
         <UrgencySlider urgency={results.urgency} />
         </div>
       )}

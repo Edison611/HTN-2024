@@ -9,6 +9,7 @@ module.exports = {
         neonPurple: "#8f00ff",
         blue: "#4682b4",
         darkBlue: "#111e6c",
+        cobaltBlue: "#0047ab",
       },
       boxShadow: {
         'text-shadow': '0 2px 4px rgba(0, 0, 0, 0.5)', // Adjust size and color as needed

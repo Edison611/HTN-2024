@@ -1,5 +1,6 @@
 import React from 'react';
-import GetStartedButton from './Button';
+import GetStartedButton from './Button.jsx';
+import Rocket from "./Rocket.jsx";
 
 
 function Hero() {
@@ -9,7 +10,8 @@ function Hero() {
       <div className="relative z-10">
         <h1 className="text-7xl font-extrabold mb-7 text-white text-shadow"> procrasti-NATION</h1>
         <p className="text-2xl mb-6 text-gray-200 text-shadow">your local hub for laziness</p>
-        <GetStartedButton link="#features" text="Get Started"/> 
+        <GetStartedButton link="#features" text="Get Started"/>
+        <Rocket/> 
       </div>
     </section>
   );

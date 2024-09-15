@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const quotes = [
-  "I love deadlines. I like the whooshing sound they make as they fly by. – Douglas Adams",
   "You don’t have to be great to start, but you have to start to be great. – Zig Ziglar",
   "Don’t wait. The time will never be just right. – Napoleon Hill",
   "Success is the sum of small efforts, repeated day-in and day-out. – Robert Collier",
@@ -41,7 +40,7 @@ const LockIn = () => {
     <div className="min-h-screen bg-gray-900 text-white p-8 flex flex-col justify-center items-center" style = {backgroundImageStyle}>
       <h1 className="text-6xl font-bold text-shadow">okay fine, let's lock in.</h1>
       {/* Display a Random Productivity Quote */}
-      <div className="bg-gray-800 border-l-8 border-blue p-3 my-8 rounded-lg shadow-lg">
+      <div className="bg-gray-800/80 border-l-8 border-blue p-3 my-8 rounded-lg shadow-lg">
         <blockquote className="text-xl italic text-white text-shadow">
           "{quote}"
         </blockquote>
@@ -54,7 +53,7 @@ const LockIn = () => {
       </div>
 
       {/* Links to helpful productivity resources */}
-      <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-xl" >
+      <div className="bg-gray-800/80 p-6 rounded-lg shadow-lg w-full max-w-xl" >
         <h2 className="text-2xl font-bold mb-4">procrastinate by reading up on procrastination</h2>
         <ul className="space-y-6">
           {resources.map((resource, index) => (

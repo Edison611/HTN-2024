@@ -6,7 +6,6 @@ from flask_cors import CORS, cross_origin
 import os
 from db import get_database
 from datetime import datetime
-import json
 from classifier import classify
 
 load_dotenv()
@@ -53,6 +52,7 @@ def history_function():
     for h in history:
         h['_id'] = str(h['_id'])
         needed_history.append(h)
+    needed_history = sorted(needed_history, key=lambda x: x['date'], reverse=True)
     all_history = {"history": needed_history}
     return jsonify(all_history)
 

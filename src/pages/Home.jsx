@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
 import star from "../assets/star.png";
+import Rocket from "../components/Rocket";
 
 
 // Background image style
@@ -24,6 +25,7 @@ function Home() {
       </header>
       <main className="flex-grow">
         <Hero />
+        <Rocket/>
         <Features />
       </main>
       

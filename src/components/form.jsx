@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-import im5 from "../assets/im5.png";
+import im1 from "../assets/im1.png";
+import im2 from "../assets/im2.jpg";
+import im3 from "../assets/im3.jpg";
+import im4 from "../assets/im4.jpg";
+import im5 from "../assets/im5.jpg";
 const UrgencySlider = (urgency) => {
     console.log(urgency)
     const [urgencyLevel, setUrgencyLevel] = useState(0); // Default level, e.g., Moderate
@@ -19,10 +23,10 @@ const UrgencySlider = (urgency) => {
     }, [urgency]);
     // Urgency levels and their associated styles
     const urgencyStyles = [
-      { label: "Trivial", bgColor: "bg-green-500", img: {} },
-      { label: "Low Priority", bgColor: "bg-blue-500", img: {} },
-      { label: "Moderate", bgColor: "bg-yellow-500", img: {}},
-      { label: "High Priority", bgColor: "bg-orange-500", img: {} },
+      { label: "Trivial", bgColor: "bg-green-500", img: im1 },
+      { label: "Low Priority", bgColor: "bg-blue-500", img: im2 },
+      { label: "Moderate", bgColor: "bg-yellow-500", img: im3},
+      { label: "High Priority", bgColor: "bg-orange-500", img: im4},
       { label: "Critical", bgColor: "bg-red-500", img: im5 },
     ];
   

@@ -34,7 +34,9 @@ def classify(inputs):
     ClassifyExample(text="Compile the research notes for the next brainstorming session", label="Moderate"),
     ClassifyExample(text="Check the licenses for software that are expiring soon", label="Low Priority"),
     ClassifyExample(text="Sort and file old invoices from previous projects", label="Trivial"),
-    ClassifyExample(text="I have an important meeting in 10 minutes", label="Critical")
+    ClassifyExample(text="I have an important meeting in 10 minutes", label="Critical"),
+    ClassifyExample(text="Relax", label="Trivial"),
+    ClassifyExample(text="Study", label="Moderate")
 ]
 
     response = co.classify(

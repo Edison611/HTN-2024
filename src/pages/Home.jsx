@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Footer from '../components/Footer';
 import star from "../assets/star.png";
-import Rocket from "../components/Rocket";
+// import Rocket from "../components/Rocket";
 
 
 // Background image style
@@ -24,7 +24,6 @@ function Home() {
       <header className="py-6 px-10 flex justify-between items-center">
       </header>
       <main className="flex-grow">
-        <Rocket/>
         <Hero />
         <Features />
       </main>

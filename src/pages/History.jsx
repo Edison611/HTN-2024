@@ -17,7 +17,7 @@ const HistoryPage = () => {
 
   useEffect(() => {
     // Fetch the history of prompts and answers for the user
-    fetch(`https://htn-24-flask-server.vercel.app/history`, {
+    fetch(`https://htn-24-flask-server.vercel.app/history `, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

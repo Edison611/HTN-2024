@@ -63,7 +63,7 @@ const Form = () => {
     e.preventDefault(); // Prevent page reload on form submission
     setLoading(true); // Start loading
 
-    fetch("http://localhost:5000/excuse", {
+    fetch("https://htn-24-flask-server.vercel.app/excuse", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -17,7 +17,7 @@ const HistoryPage = () => {
 
   useEffect(() => {
     // Fetch the history of prompts and answers for the user
-    fetch(`http://localhost:5000/history`, {
+    fetch(`https://htn-24-flask-server.vercel.app/history`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ const HistoryPage = () => {
   return (
     <div style = {backgroundImageStyle}>
     <div className=" text-white p-8 text-shadow">
-      <h1 className="text-5xl font-bold mt-10 mb-10 text-shadow text-center">user excuse history</h1>
+      <h1 className="text-5xl font-bold mt-10 mb-10 text-shadow text-center">history of avoidance</h1>
 
       {history.length === 0 ? (
         <p className="text-center">No history found for this user.</p>

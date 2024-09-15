@@ -1,5 +1,4 @@
 import Form from "../components/form.jsx";
-import './excuse.css'; // Import the updated CSS for the cute starry background
 import React from 'react';
 
 

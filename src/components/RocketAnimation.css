@@ -1,10 +1,8 @@
-Container that holds the rocket
 .rocket-container {
   position: relative;
   width: 100vw;  /* Full viewport width */
   height: 100vh; /* Full viewport height */
   overflow: hidden; /* Prevents scrolling during animation */
-  background-color: #1a202c; /* Dark background */
 }
 
 /* Rocket styles */
@@ -14,22 +12,21 @@ Container that holds the rocket
   bottom: 20%; /* Adjust height from bottom */
   font-size: 3rem; /* Adjust the size of the rocket */
   transform: rotate(45deg); /* Make it look like it's flying diagonally */
-  animation: fly 10s linear infinite; /* Smooth flying animation */
+  animation: fly 8s linear infinite; /* Smooth flying animation */
 }
 
 /* Keyframes for the rocket animation */
 @keyframes fly {
   0% {
-    left: -100%; /* Start completely off the left side */
+    left: -20%; /* Start farther off the left side of the screen */
     bottom: 40%; /* Starting height */
   }
   50% {
     left: 50%; /* Midpoint in the flight */
-    bottom: 130%; /* Peak height in the middle */
+    bottom: 80%; /* Peak height in the middle */
   }
   100% {
-    left: 200%; /* End at the far right edge of the screen */
+    left: 120%; /* End farther off the right side of the screen */
     bottom: 20%; /* Come back down */
   }
 }
-

@@ -1,7 +1,7 @@
 import React from 'react';
 import './RocketAnimation.css'; // We'll create this CSS file
 
-const Rocket = () => {
+const RocketAnimation = () => {
   return (
     <div className="rocket-container">
       <div className="rocket">🚀</div>
@@ -9,4 +9,4 @@ const Rocket = () => {
   );
 };
 
-export default Rocket;
+export default RocketAnimation;

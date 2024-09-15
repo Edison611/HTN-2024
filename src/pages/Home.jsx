@@ -25,7 +25,6 @@ function Home() {
       </header>
       <main className="flex-grow">
         <Hero />
-        <Rocket/>
         <Features />
       </main>
       
